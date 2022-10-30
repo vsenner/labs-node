@@ -1,12 +1,6 @@
 module.exports = {
-  extends: [
-    'plugin:sonarjs/recommended',
-    'prettier',
-    'airbnb-standard'
-  ],
-  plugins: [
-    'sonarjs',
-  ],
+  extends: ['plugin:sonarjs/recommended', 'prettier', 'airbnb-standard'],
+  plugins: ['sonarjs'],
   env: {
     browser: true,
     es2021: true,
