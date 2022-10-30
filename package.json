@@ -1,0 +1,24 @@
+{
+  "name": "labs-node",
+  "version": "1.0.0",
+  "description": "Labs Node JS 2022",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --ignore-path .gitignore .",
+    "lint:fix": "eslint --fix ./*.js",
+    "format": "prettier --ignore-path .gitignore --check .",
+    "prepare": "husky install",
+    "test": "npm run lint && npm run format"
+  },
+  "author": "vadim.senner@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.26.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-standard": "^3.1.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-sonarjs": "^0.16.0",
+    "husky": "^8.0.1",
+    "prettier": "2.7.1"
+  }
+}

@@ -1,0 +1,20 @@
+name: LabsNodeJS2022
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.x]
+    steps:
+      - uses: actions/checkout@v3
+      - name: Using Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install dependency
+        run: npm install
+      - name: Running Prettier
+        run: npm run format
+      - name: Running ESLint
+        run: npm run lint
