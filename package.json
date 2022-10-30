@@ -4,7 +4,7 @@
   "description": "Labs Node JS 2022",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint --ignore-path .gitignore .",
+    "lint": "npx eslint",
     "lint:fix": "eslint --fix ./*.js",
     "format": "prettier --ignore-path .gitignore --check .",
     "prepare": "husky install",
