@@ -4,7 +4,7 @@
   "description": "Labs Node JS 2022",
   "main": "index.js",
   "scripts": {
-    "lint": "npx eslint",
+    "lint": "eslint",
     "lint:fix": "eslint --fix ./*.js",
     "format": "prettier --ignore-path .gitignore --check .",
     "prepare": "husky install",
@@ -12,6 +12,7 @@
   },
   "author": "vadim.senner@gmail.com",
   "license": "ISC",
+  "type": "module",
   "devDependencies": {
     "eslint": "^8.26.0",
     "eslint-config-airbnb": "^19.0.4",
